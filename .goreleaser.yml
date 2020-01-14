@@ -1,0 +1,17 @@
+builds:
+  - main: ./cmd/go-getter
+    binary: go-getter
+    flags: -tags netgo
+    goos:
+      - linux
+    goarch:
+      - amd64
+      - arm64
+archives:
+  - format: zip
+release:
+  github:
+    owner: ncabatoff
+    name: go-getter
+  draft: false
+  prerelease: true
